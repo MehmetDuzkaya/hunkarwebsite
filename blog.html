@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="blog">Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo"><span>Hünkar</span> Baklava</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" data-key="home">Ana Sayfa</a></li>
+          <li><a href="urunler.html" data-key="products">Ürünler</a></li>
+          <li><a href="hakkimizda.html" data-key="about">Hakkımızda</a></li>
+          <li><a href="blog.html" data-key="blog">Blog</a></li>
+          <li><a href="iletisim.html" data-key="contact">İletişim</a></li>
+        </ul>
+      </nav>
+      <select id="lang-switcher">
+        <option value="tr">TR</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="blog-featured">
+    <div class="container">
+      <h2 class="section-title" data-key="blogTitle">Blogdan Seçtiklerimiz</h2>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <img src="assets/img/blog1.jpg" alt="Blog 1">
+          <h3 data-key="blog1Title">Baklavanın Tarihi</h3>
+          <p data-key="blog1Desc">Baklavanın kökeni ve Osmanlı mutfağındaki yeri.</p>
+          <a href="#" class="btn-more" data-key="readMore">Devamı</a>
+        </div>
+        <div class="blog-card">
+          <img src="assets/img/blog2.jpg" alt="Blog 2">
+          <h3 data-key="blog2Title">En İyi Malzeme Seçimi</h3>
+          <p data-key="blog2Desc">Lezzetin sırrı kaliteli malzemede saklıdır.</p>
+          <a href="#" class="btn-more" data-key="readMore">Devamı</a>
+        </div>
+        <div class="blog-card">
+          <img src="assets/img/blog3.jpg" alt="Blog 3">
+          <h3 data-key="blog3Title">Usta İpuçları</h3>
+          <p data-key="blog3Desc">Evde baklava yapmanın püf noktaları.</p>
+          <a href="#" class="btn-more" data-key="readMore">Devamı</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-logo">Hünkar Baklava</div>
+      <div class="footer-links">
+        <a href="#" class="instagram" title="Instagram"></a>
+        <a href="#" class="facebook" title="Facebook"></a>
+        <a href="#" class="twitter" title="X (Twitter)"></a>
+      </div>
+      <div class="footer-contact">
+        <span>info@hunkarbaklava.com</span>
+        <span>0 555 555 55 55</span>
+      </div>
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1Qw8Qw8Qw8Qw8Qw8Qw8Qw8Qw8Qw8" width="120" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

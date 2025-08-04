@@ -1,0 +1,16 @@
+AddType application/x-httpd-php .php
+AddHandler application/x-httpd-php .php
+
+# PHP dosyalarını çalıştır
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Dizin listelemesini kapat
+Options -Indexes
+
+# Güvenlik
+<Files "*.sql">
+    Order allow,deny
+    Deny from all
+</Files> 

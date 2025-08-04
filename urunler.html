@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="products">Ürünler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo"><span>Hünkar</span> Baklava</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" data-key="home">Ana Sayfa</a></li>
+          <li><a href="urunler.html" data-key="products">Ürünler</a></li>
+          <li><a href="hakkimizda.html" data-key="about">Hakkımızda</a></li>
+          <li><a href="blog.html" data-key="blog">Blog</a></li>
+          <li><a href="iletisim.html" data-key="contact">İletişim</a></li>
+        </ul>
+      </nav>
+      <select id="lang-switcher">
+        <option value="tr">TR</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Baklava Çeşitleri -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title" data-key="baklavaTitle">Baklava Çeşitleri</h2>
+      <div class="category-slider">
+        <div class="category-card">
+          <img src="assets/img/classic.jpg" alt="Klasik Baklava">
+          <h3 data-key="classicBaklava">Klasik Baklava</h3>
+          <p class="product-info" data-key="classicBaklavaInfo">Klasik baklava, Osmanlı saray mutfağının en bilinen tatlısıdır.</p>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/pistachio.jpg" alt="Fıstıklı Baklava">
+          <h3 data-key="pistachioBaklava">Fıstıklı Baklava</h3>
+          <p class="product-info" data-key="pistachioBaklavaInfo">Fıstıklı baklava, Gaziantep'in coğrafi işaretli fıstığı ile yapılır ve en çok tercih edilen baklava türüdür.</p>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/walnut.jpg" alt="Cevizli Baklava">
+          <h3 data-key="walnutBaklava">Cevizli Baklava</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/havuc.jpg" alt="Havuç Dilimi">
+          <h3 data-key="carrotSlice">Havuç Dilimi</h3>
+          <p class="product-info" data-key="carrotSliceInfo">Havuç dilimi baklava, üçgen formu ve bol fıstığı ile özel günlerin vazgeçilmezidir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tatlı Çeşitleri -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title" data-key="dessertsTitle">Tatlı Çeşitleri</h2>
+      <div class="category-slider">
+        <div class="category-card">
+          <img src="assets/img/kunefe.jpg" alt="Künefe">
+          <h3 data-key="kunefe">Künefe</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/sutlac.jpg" alt="Sütlaç">
+          <h3 data-key="ricePudding">Sütlaç</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/kazandibi.jpg" alt="Kazandibi">
+          <h3 data-key="kazandibi">Kazandibi</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/revani.jpg" alt="Revani">
+          <h3 data-key="revani">Revani</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Börek Çeşitleri -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title" data-key="pastriesTitle">Börek Çeşitleri</h2>
+      <div class="category-slider">
+        <div class="category-card">
+          <img src="assets/img/su-boregi.jpg" alt="Su Böreği">
+          <h3 data-key="waterBorek">Su Böreği</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/kol-boregi.jpg" alt="Kol Böreği">
+          <h3 data-key="armBorek">Kol Böreği</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/sigara-boregi.jpg" alt="Sigara Böreği">
+          <h3 data-key="cigaretteBorek">Sigara Böreği</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/tepsi-boregi.jpg" alt="Tepsi Böreği">
+          <h3 data-key="trayBorek">Tepsi Böreği</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pasta Çeşitleri -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title" data-key="cakesTitle">Pasta Çeşitleri</h2>
+      <div class="category-slider">
+        <div class="category-card">
+          <img src="assets/img/cikolata-pasta.jpg" alt="Çikolatalı Pasta">
+          <h3 data-key="chocolateCake">Çikolatalı Pasta</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/cheesecake.jpg" alt="Cheesecake">
+          <h3 data-key="cheesecake">Cheesecake</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/tiramisu.jpg" alt="Tiramisu">
+          <h3 data-key="tiramisu">Tiramisu</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/img/red-velvet.jpg" alt="Red Velvet">
+          <h3 data-key="redVelvet">Red Velvet</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-logo">Hünkar Baklava</div>
+      <div class="footer-links">
+        <a href="#" class="instagram" title="Instagram"></a>
+        <a href="#" class="facebook" title="Facebook"></a>
+        <a href="#" class="twitter" title="X (Twitter)"></a>
+      </div>
+      <div class="footer-contact">
+        <span>info@hunkarbaklava.com</span>
+        <span>0 555 555 55 55</span>
+      </div>
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1Qw8Qw8Qw8Qw8Qw8Qw8Qw8Qw8Qw8" width="120" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

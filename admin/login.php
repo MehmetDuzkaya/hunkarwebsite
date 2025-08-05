@@ -247,11 +247,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
         </a>
         
-        <div class="demo-info">
-            <strong>Demo Bilgileri:</strong><br>
-            Kullanıcı Adı: <strong>admin</strong><br>
-            Şifre: <strong>admin123</strong>
-        </div>
     </div>
 </body>
 </html> 

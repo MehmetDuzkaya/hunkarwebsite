@@ -40,10 +40,6 @@ $about_main = $stmt->fetch();
                      <li><a href="iletisim_dynamic.php" data-key="contact">İletişim</a></li>
         </ul>
       </nav>
-      <select id="lang-switcher">
-        <option value="tr">TR</option>
-        <option value="en">EN</option>
-      </select>
     </div>
   </header>
 

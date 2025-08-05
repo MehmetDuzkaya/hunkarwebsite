@@ -108,30 +108,26 @@ foreach ($about_sections as $section) {
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Inline the header HTML/CSS from index_dynamic.php here, replacing the include -->
     <header class="site-header">
-        <div class="container header-flex">
-            <a href="index_dynamic.php" class="logo"><span>Hünkar</span> Baklava</a>
-            <nav class="main-nav">
-                <ul>
-                                         <li><a href="index_dynamic.php" data-key="home">Ana Sayfa</a></li>
-                    <li><a href="urunler_dynamic.php" data-key="products">Ürünler</a></li>
-                    <li><a href="hakkimizda_dynamic.php" data-key="about">Hakkımızda</a></li>
-                    <li><a href="blog_dynamic.php" data-key="blog">Blog</a></li>
-                                         <li><a href="iletisim_dynamic.php" data-key="contact">İletişim</a></li>
-                </ul>
-            </nav>
-            <select id="lang-switcher">
-                <option value="tr">TR</option>
-                <option value="en">EN</option>
-            </select>
-        </div>
+      <div class="container header-flex">
+        <a href="index_dynamic.php" class="logo"><span>Hünkar</span> Baklava</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index_dynamic.php">Ana Sayfa</a></li>
+            <li><a href="urunler_dynamic.php">Ürünler</a></li>
+            <li><a href="hakkimizda_dynamic.php">Hakkımızda</a></li>
+            <li><a href="blog_dynamic.php">Blog</a></li>
+            <li><a href="iletisim_dynamic.php">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="about-container">
         <div class="about-header">
-            <h1><i class="fas fa-info-circle"></i> Hakkımızda</h1>
-            <p>30 yıllık lezzet yolculuğumuz</p>
+            <h1 data-key="about"><i class="fas fa-info-circle"></i> Hakkımızda</h1>
+            <p data-key="aboutSubtitle">30 yıllık lezzet yolculuğumuz</p>
         </div>
 
         <?php if (isset($sections['main'])): ?>
@@ -153,19 +149,19 @@ foreach ($about_sections as $section) {
         <div class="about-stats">
             <div class="stat-item">
                 <div class="stat-number">30+</div>
-                <div class="stat-label">Yıllık Deneyim</div>
+                <div class="stat-label"><span data-key="statExperience">Yıllık Deneyim</span></div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">1000+</div>
-                <div class="stat-label">Mutlu Müşteri</div>
+                <div class="stat-label"><span data-key="statHappyCustomers">Mutlu Müşteri</span></div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">50+</div>
-                <div class="stat-label">Ürün Çeşidi</div>
+                <div class="stat-label"><span data-key="statProductVariety">Ürün Çeşidi</span></div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">24/7</div>
-                <div class="stat-label">Hizmet</div>
+                <div class="stat-label"><span data-key="statService">Hizmet</span></div>
             </div>
         </div>
 
@@ -218,7 +214,7 @@ foreach ($about_sections as $section) {
         <?php endif; ?>
 
         <div class="back-link">
-            <a href="index.html"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
+            <a href="index.html" data-key="backToHome"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
         </div>
     </div>
 

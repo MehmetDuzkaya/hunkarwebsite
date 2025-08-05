@@ -33,17 +33,13 @@ foreach ($categories as $category) {
       <a href="index_dynamic.php" class="logo"><span>Hünkar</span> Baklava</a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index_dynamic.php">Ana Sayfa</a></li>
-          <li><a href="urunler_dynamic.php">Ürünler</a></li>
-          <li><a href="hakkimizda_dynamic.php">Hakkımızda</a></li>
-          <li><a href="blog_dynamic.php">Blog</a></li>
-          <li><a href="iletisim_dynamic.php">İletişim</a></li>
+          <li><a href="index_dynamic.php" data-key="home">Ana Sayfa</a></li>
+          <li><a href="urunler_dynamic.php" data-key="products">Ürünler</a></li>
+          <li><a href="hakkimizda_dynamic.php" data-key="about">Hakkımızda</a></li>
+          <li><a href="blog_dynamic.php" data-key="blog">Blog</a></li>
+          <li><a href="iletisim_dynamic.php" data-key="contact">İletişim</a></li>
         </ul>
       </nav>
-      <select id="lang-switcher">
-        <option value="tr">TR</option>
-        <option value="en">EN</option>
-      </select>
     </div>
   </header>
 

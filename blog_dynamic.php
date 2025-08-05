@@ -115,34 +115,30 @@ $categories = $stmt->fetchAll();
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Inline the header HTML/CSS from index_dynamic.php here, replacing the include -->
     <header class="site-header">
-        <div class="container header-flex">
-            <a href="index_dynamic.php" class="logo"><span>Hünkar</span> Baklava</a>
-            <nav class="main-nav">
-                <ul>
-                                         <li><a href="index_dynamic.php" data-key="home">Ana Sayfa</a></li>
-                    <li><a href="urunler_dynamic.php" data-key="products">Ürünler</a></li>
-                                         <li><a href="hakkimizda_dynamic.php" data-key="about">Hakkımızda</a></li>
-                    <li><a href="blog_dynamic.php" data-key="blog">Blog</a></li>
-                                         <li><a href="iletisim_dynamic.php" data-key="contact">İletişim</a></li>
-                </ul>
-            </nav>
-            <select id="lang-switcher">
-                <option value="tr">TR</option>
-                <option value="en">EN</option>
-            </select>
-        </div>
+      <div class="container header-flex">
+        <a href="index_dynamic.php" class="logo"><span>Hünkar</span> Baklava</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index_dynamic.php">Ana Sayfa</a></li>
+            <li><a href="urunler_dynamic.php">Ürünler</a></li>
+            <li><a href="hakkimizda_dynamic.php">Hakkımızda</a></li>
+            <li><a href="blog_dynamic.php">Blog</a></li>
+            <li><a href="iletisim_dynamic.php">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="blog-container">
         <div class="blog-header">
-            <h1><i class="fas fa-newspaper"></i> Blog</h1>
-            <p>Baklava dünyasından en güncel haberler ve tarifler</p>
+            <h1 data-key="blog"><i class="fas fa-newspaper"></i> Blog</h1>
+            <p data-key="blogSubtitle">Baklava dünyasından en güncel haberler ve tarifler</p>
         </div>
 
         <div class="blog-categories">
-            <a href="blog_dynamic.php" class="category-btn active">Tümü</a>
+            <a href="blog_dynamic.php" class="category-btn active" data-key="allCategories">Tümü</a>
             <?php foreach ($categories as $category): ?>
                 <a href="blog_dynamic.php?category=<?php echo $category['id']; ?>" class="category-btn">
                     <?php echo htmlspecialchars($category['name_tr']); ?>
@@ -153,7 +149,7 @@ $categories = $stmt->fetchAll();
         <?php if (empty($posts)): ?>
             <div class="no-posts">
                 <i class="fas fa-newspaper" style="font-size: 3em; color: #ddd; margin-bottom: 20px;"></i>
-                <p>Henüz blog yazısı bulunmuyor.</p>
+                <p data-key="noBlogPostsFound">Henüz blog yazısı bulunmuyor.</p>
             </div>
         <?php else: ?>
             <div class="blog-grid">
@@ -174,9 +170,6 @@ $categories = $stmt->fetchAll();
                             <div class="blog-post-excerpt">
                                 <?php echo htmlspecialchars($post['excerpt_tr'] ?: substr($post['content_tr'], 0, 150) . '...'); ?>
                             </div>
-                            <a href="blog_post.php?id=<?php echo $post['id']; ?>" class="btn-more">
-                                Devamını Oku
-                            </a>
                         </div>
                     </article>
                 <?php endforeach; ?>
@@ -184,7 +177,7 @@ $categories = $stmt->fetchAll();
         <?php endif; ?>
 
         <div class="back-link">
-            <a href="index.html"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
+            <a href="index.html" data-key="backToHome"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
         </div>
     </div>
 

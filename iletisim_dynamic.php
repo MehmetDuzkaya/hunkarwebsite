@@ -25,17 +25,13 @@ $contact_info = $stmt->fetch();
       <a href="index_dynamic.php" class="logo"><span>Hünkar</span> Baklava</a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index_dynamic.php">Ana Sayfa</a></li>
-          <li><a href="urunler_dynamic.php">Ürünler</a></li>
-          <li><a href="hakkimizda_dynamic.php">Hakkımızda</a></li>
-          <li><a href="blog_dynamic.php">Blog</a></li>
-          <li><a href="iletisim_dynamic.php">İletişim</a></li>
+          <li><a href="index_dynamic.php" data-key="home">Ana Sayfa</a></li>
+          <li><a href="urunler_dynamic.php" data-key="products">Ürünler</a></li>
+          <li><a href="hakkimizda_dynamic.php" data-key="about">Hakkımızda</a></li>
+          <li><a href="blog_dynamic.php" data-key="blog">Blog</a></li>
+          <li><a href="iletisim_dynamic.php" data-key="contact">İletişim</a></li>
         </ul>
       </nav>
-      <select id="lang-switcher">
-        <option value="tr">TR</option>
-        <option value="en">EN</option>
-      </select>
     </div>
   </header>
 
@@ -53,10 +49,10 @@ $contact_info = $stmt->fetch();
       <div class="contact-info">
         <h2>İletişim Bilgileri</h2>
         <?php if ($contact_info): ?>
-          <p><strong>Adres:</strong> <?php echo htmlspecialchars($contact_info['address']); ?></p>
-          <p><strong>Telefon:</strong> <?php echo htmlspecialchars($contact_info['phone']); ?></p>
-          <p><strong>E-posta:</strong> <?php echo htmlspecialchars($contact_info['email']); ?></p>
-          <?php if ($contact_info['working_hours']): ?>
+          <p><strong>Adres:</strong> <?php echo isset($contact_info['address']) ? htmlspecialchars($contact_info['address']) : 'Adres bilgisi eklenmedi.'; ?></p>
+          <p><strong>Telefon:</strong> <?php echo isset($contact_info['phone']) ? htmlspecialchars($contact_info['phone']) : 'Telefon bilgisi eklenmedi.'; ?></p>
+          <p><strong>E-posta:</strong> <?php echo isset($contact_info['email']) ? htmlspecialchars($contact_info['email']) : 'E-posta bilgisi eklenmedi.'; ?></p>
+          <?php if (isset($contact_info['working_hours'])): ?>
             <p><strong>Çalışma Saatleri:</strong> <?php echo htmlspecialchars($contact_info['working_hours']); ?></p>
           <?php endif; ?>
         <?php else: ?>

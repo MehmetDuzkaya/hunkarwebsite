@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfcf8;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Brand colors available for future use */
+:root {
+  --brand-primary: #645b49; /* coffee */
+  --brand-soft-bg: #DEDCD3; /* sand */
+}
